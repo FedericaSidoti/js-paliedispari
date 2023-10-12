@@ -32,3 +32,4 @@ if (isPalindrome(wordStraight, wordReverse)) {
 } else {
     alert("questa parola non è palindroma")
 }
+
