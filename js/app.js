@@ -10,36 +10,28 @@ for ( let i = 0; i < wordRequest.length; i++) {
 }
 console.log(arrayLetters)
 
-
-let arrayLettersreverse = arrayLetters.reverse()
+let arrayLettersreverse = arrayLetters.toReversed()
 console.log(arrayLettersreverse)
 
-let reverseString
-
-for( let i = 0; i < arrayLettersreverse.lenght; i++) {
-    let currentLetter = arrayLettersreverse[i]
-    reverseString = reverseString + currentLetter
-}
-console.log(reverseString)
+const wordReverse = arrayLetters.toString();
+const wordStraight = arrayLettersreverse.toString();
 
 
-function isPalindrome (array, arrayReverse) {
-    if (array === arrayReverse) {
+function isPalindrome (word, wordReverse) {
+    if (word === wordReverse) {
         return true;
     } else {
         return false; 
     }
 }
 
-if (isPalindrome(arrayLetters, arrayLettersreverse)) {
+if (isPalindrome(wordStraight, wordReverse)) {
     alert("la parola è palindroma!")
 } else {
     alert("questa parola non è palindroma")
 }
 
 
-
-//    -applicare array.reverse()
 //- SE la parola e la parola invertita corrispondono
 //    - allora alert "la parola è palindroma"
 //- ALTRIMENTI 
